@@ -1,0 +1,17 @@
+# Project Paper: Customer Churn Prediction Workflow
+
+## 1. Introduction
+Customer churn represents the rate at which customers stop doing business with an entity. This project implements an end-to-end Machine Learning pipeline utilizing demographic and service usage data to predict the probability of a specific customer churning in the future.
+
+## 2. Methodology
+Due to the absence of a live database, `src/train.py` creates a semi-synthetic dataset mirroring real-world conditions (such as the IBM Telco Customer Churn dataset). Key features such as Tenure, Monthly Charges, Internet Service, and Contracts directly influence the target variable, making the synthetic data reliable for model training.
+
+**Model Chosen:** Random Forest Classifier.
+*Reasoning:* Random Forests handle non-linear relationships gracefully and are robust against over-fitting compared to individual decision trees.
+
+## 3. Architecture
+- **API Engine (FastAPI):** Exposing the serialized model pipeline via REST API, ensuring high scalability and asynchronous support.
+- **Frontend (Vanilla HTML/CSS/JS):** Designed using a modern glass-like aesthetic without the reliance on heavyweight frontend frameworks, ensuring blazing fast startup times and an exceptional user experience on client devices.
+
+## 4. Conclusion
+This workflow constitutes a production-ready template that can trivially be plugged into CI/CD pipelines and Docker clusters.
