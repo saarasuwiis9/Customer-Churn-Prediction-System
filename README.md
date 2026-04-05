@@ -161,6 +161,4 @@ Open `frontend/index.html` in your browser
 
 ---
 
-## ⭐ Contributing
 
-Contributions, suggestions, and feedback are welcome!
